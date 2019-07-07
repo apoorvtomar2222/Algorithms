@@ -18,9 +18,7 @@ function bubbleSortOptimized(arr) {
   let noSwaps;
   for (let i = arr.length; i > 0; i--) {
     noSwaps = true;
-    console.log('i', i);
     for (let j = 0; j < i - 1; j++) {
-      console.log(arr, arr[j], arr[j + 1]);
       if (arr[j] > arr[j + 1]) {
         let temp = arr[j];
         arr[j] = arr[j + 1];
@@ -29,7 +27,7 @@ function bubbleSortOptimized(arr) {
       }
       console.log(noSwaps);
       }
-    if (noSwaps) break
+    if (noSwaps) break;
   }
 }
 bubbleSortOptimized([12, 1, 10, 9, 8, 7, 6, 11]);
